@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+closure is an ability of a function to remember the variables and functions declared in its outer scope.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,9 +83,12 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+The value passed in the personalDice function as a paramter is a closure used in the code. The inner function using the values in its outer scope.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+we are calling the `dansRoll` twice it will return a value with the same parameter we are passing. we have to
+call `zoesRoll` second time. 
 c. What is the lexical scope of `newRoll`? 
-
+personalDice function is the lexical scope of `newRoll`.
 
 ### Task 3 - Stretch Goals
 
